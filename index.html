@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Harsh Angre | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --emerald: #046C4E;
+      --champagne: #F7E8D0;
+      --bg: #0E0E0E;
+      --card: #1A1A1A;
+      --text: #F8F8F8;
+      --muted: #CFCFCF;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Outfit', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    a {
+      color: var(--emerald);
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    header {
+      text-align: center;
+      padding: 4rem 1rem 2rem;
+      background: linear-gradient(to bottom, var(--bg), #151515);
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      color: var(--emerald);
+    }
+
+    header p {
+      color: var(--champagne);
+      font-size: 1rem;
+      margin-top: 0.5rem;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+      padding: 1rem;
+      background: var(--card);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    nav a {
+      color: var(--champagne);
+      font-weight: 500;
+      font-size: 0.95rem;
+    }
+
+    nav a:hover {
+      color: var(--emerald);
+    }
+
+    section {
+      padding: 2.5rem 1.5rem;
+      max-width: 800px;
+      margin: auto;
+    }
+
+    section h2 {
+      text-align: center;
+      font-size: 1.5rem;
+      color: var(--champagne);
+      margin-bottom: 1.5rem;
+      position: relative;
+    }
+
+    section h2::after {
+      content: '';
+      display: block;
+      width: 50px;
+      height: 3px;
+      background: var(--emerald);
+      margin: 8px auto 0;
+    }
+
+    .about p {
+      text-align: center;
+      color: var(--muted);
+    }
+
+    .timeline {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+      margin-top: 1rem;
+    }
+
+    .card {
+      background: var(--card);
+      border-left: 4px solid var(--emerald);
+      padding: 1rem 1.2rem;
+      border-radius: 8px;
+    }
+
+    .card h3 {
+      color: var(--emerald);
+      margin-bottom: 0.25rem;
+      font-size: 1.1rem;
+    }
+
+    .card span {
+      font-size: 0.85rem;
+      color: #aaa;
+    }
+
+    .card p {
+      margin-top: 0.5rem;
+      font-size: 0.9rem;
+      color: var(--muted);
+    }
+
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 0.75rem;
+      margin-top: 1.5rem;
+    }
+
+    .skills span {
+      padding: 0.6rem 1.2rem;
+      border-radius: 25px;
+      background: #222;
+      color: var(--champagne);
+      font-weight: 500;
+      font-size: 0.9rem;
+      border: 1px solid var(--emerald);
+      transition: background 0.3s;
+    }
+
+    .skills span:hover {
+      background: var(--emerald);
+      color: var(--bg);
+    }
+
+    .contact {
+      text-align: center;
+      color: var(--muted);
+    }
+
+    .contact a {
+      display: inline-block;
+      margin-top: 1rem;
+      font-size: 1.05rem;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 0.85rem;
+      padding: 2rem 1rem;
+      background: var(--card);
+      color: #999;
+    }
+
+    @media (min-width: 768px) {
+      header h1 {
+        font-size: 3.5rem;
+      }
+
+      nav a {
+        font-size: 1rem;
+      }
+
+      section h2 {
+        font-size: 1.75rem;
+      }
+
+      .card h3 {
+        font-size: 1.2rem;
+      }
+
+      .card p {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Harsh Angre</h1>
+    <p>Creative Developer & UI Designer</p>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#experience">Experience</a>
+    <a href="#education">Education</a>
+    <a href="#skills">Skills</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about" class="about">
+    <h2>About Me</h2>
+    <p>I’m Harsh, a student and as well as front-end developer with a passion for creating beautiful and functional interfaces. I blend clean code with aesthetic design to bring ideas to life across devices.</p>
+  </section>
+
+  <section id="experience">
+    <h2>Experience</h2>
+    <div class="timeline">
+      <div class="card">
+        <h3>Front-End Developer Intern — ProAzure</h3>
+        <span>June 2025 – Present</span>
+        <p>Building responsive UI components and optimizing performance for large-scale web platforms, Building full stack web apps, collaborating on projects, and sharpening coding skills.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="education">
+    <h2>Education</h2>
+    <div class="timeline">
+      <div class="card">
+        <h3>Student</h3>
+        <p>Sinhgad College of Engineering, Pune
+          Second Year Completed | 2023 – Present.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skills">
+      <span>HTML</span>
+      <span>CSS</span>
+      <span>JavaScript</span>
+      <span>C</span>
+      <span>C++</span>
+      <span>Java</span>
+      <span>Git</span>
+      <span>UI/UX</span>
+      <span>Responsive Design</span>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Contact</h2>
+    <p>Let’s build something great together.</p>
+    <a href="mailto:harsh@example.com">harshangre7@gmail.com</a>
+  </section>
+
+  <footer>
+    &copy; 2025 Harsh Angre. All rights reserved.
+  </footer>
+
+</body>
+</html>
